@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Регистрация</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        background-color: whitesmoke;
+        width:100%;
+        margin: 0;
+      }
+      .page__head-line{
+        width: 100%;
+
+      }
+      .log-ref{
+        padding: 30px;
+        text-align: end;
+      }
+
+      
+      .page__content {
+        display:flex;
+        justify-content: space-around;
+      }
+      .reg-block{
+        margin: 100px;
+      }
+
+      .container {
+
+        background-color: white;
+        width: 300px;
+        height: 900px;
+        display:flex;
+        
+        flex-direction: column;
+        align-items: stretch;
+        
+        justify-content: space-evenly;
+
+        
+      }
+      .adv-block{
+        height: 400px;
+        width: 500px;
+        margin: 100px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .png-cont{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      p{
+        text-indent: 50px;
+        
+      }
+      .field{
+        max-width:300px;
+        max-height:300px;
+        margin: 25px;
+      }
+      .flag{
+        
+        height: 150px;
+        margin: 25px;
+      }
+      .page__footer{
+        margin-bottom: 32px;
+        margin-left: 40px;
+      }
+      h1{
+        
+        text-size-adjust: 12;
+        text-align: center
+      }
+
+      button{
+        background-color: orange;
+      }
+
+      .png{
+        height: 100px;
+        width: 100px;
+        
+      }
+
+
+   
+
+      
+
+
+      
+    </style>
+  </head>
+  <body class="page">
+    <div class="page__head-line">
+       <div class="log-ref">Уже есть аккаунт на Яндексе?<a href="#" class="log-link">Войти</a></div>
+    </div>
+    <div class="page__content">
+   
+      
+      <div class="adv-block">
+        <img class="mainlogo" src="yalogo.jpg" width="80" height="80">
+        <div class="png-cont">
+        <div class="png">
+        <img  src="plus-mail.png" width="80" height="80">
+        </div>   
+        <div class="png">
+        <img  src="plus-disk.png" width="80" height="80">
+        </div>
+        <div class="png">
+        <img  src="plus-kinopoisk.png" width="80" height="80">
+       </div>
+        <div class="png">
+        <img  src="plus-music.png" width="80" height="80">
+      </div>
+       </div>
+        <p>Пишите письма, сохраняйте и делитесь файлами,
+          слушайте музыку и смотрите фильмы с подпиской Яндекс.Плюс</p>
+      </div>
+    
+
+      
+
+      <form class="reg-block" style="border:1px solid rgb(255, 254, 254)">
+        <div class="container">
+          <h1>Регистрация</h1>
+          
+        
+        <div class="field">
+          <label for="name"></label>
+          <input type="text" placeholder="Имя" name="name" required>
+        </div>
+
+
+        <div class="field">
+          <label for="surname"></label>
+          <input type="text" placeholder="Фамилия" name="surname" required>
+        </div>
+
+
+        <div class="field">
+          <label for="login"></label>
+          <input type="text" placeholder="Придумайте логин" name="login" required>
+        </div>
+
+        <div class="field">
+          <label for="psw"></label>
+          <input type="password" placeholder="Придумайте пароль" name="psw" required>
+        </div>
+
+        <div class="field">
+          <label for="psw-repeat"></label>
+          <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+        </div>
+
+        <div class="field">
+          <label for="phone"></label>
+          <input type="tel" placeholder="Номер мобильного телефона" name="phone" required>
+        </div>
+          <div class="field">
+          <button type="submit" class="signupbtn">Зарегистрироваться</button>
+        </div>
+
+        <div class="flag">
+         <input type="checkbox" checked="checked" name="convention" required >Я принимаю условия <a href="#" class="conv-link">Пользовательского соглашения</a>> и даю своё согласие Яндексу на обработку моей персональной информации на условиях, определенных <a href="#" class="pol-link">Политикой конфиденциальности</a>>.
+        </div>
+        <div class="flag">
+         <input type="checkbox" name="ad-let">Я не хочу получать рекламу и другие предложения данного сервиса Яндекса
+        </div>
+        </div>
+      </form>
+
+      
+  
+  </div>
+  <div class="page__footer">
+    <a href="#" class="lang">Ru</a>   <a href="#" class="asks">Справка</a>   <a href="#" class="recon">Обратная связь</a> &copy;  2001-2021,<a href="#" class="Yandex">Яндекс</a>
+
+  </div>
+
+  </body>
+</html>
